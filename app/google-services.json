@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "225449760641",
+    "firebase_url": "https://dibosh-2256e.firebaseio.com",
+    "project_id": "dibosh-2256e",
+    "storage_bucket": "dibosh-2256e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:225449760641:android:d5d0391c00e578ab",
+        "android_client_info": {
+          "package_name": "com.optimalbd.dibosh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "225449760641-sj4edupds8l0tf4fv8e3cj2utdv5crh1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDo2YaimTCG_zYL9bTn-616MQgnZ1RDcik"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "225449760641-sj4edupds8l0tf4fv8e3cj2utdv5crh1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context="com.optimalbd.dibosh.Fragments.HolidayFragment">
+
+<!--android:background="#363636"-->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#363636"
+    android:baselineAligned="false"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:visibility="visible"
+        android:gravity="start"
+        android:orientation="horizontal">
+
+
+        <com.optimalbd.dibosh.TextView.CustomTextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="7dp"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/holiday_list"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:visibility="visible"
+            app:customFont="@string/font_name" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:visibility="invisible"
+        android:id="@+id/viewAsLayout"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="2dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="0.35"
+        android:background="@drawable/spinner_bacground"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/viewByList"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:src="@drawable/list" />
+
+            <ImageView
+                android:id="@+id/viewByTable"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:src="@drawable/grid" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ListView
+        android:id="@+id/holidayListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:divider="@null">
+    </ListView>
+
+    <ProgressBar
+        android:id="@+id/loading_progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:indeterminateDrawable="@drawable/progress_background" />
+
+
+</RelativeLayout>
+
+
+
+</LinearLayout>
+

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="com.optimalbd.dibosh.ProfileActivity">
+
+    <include layout="@layout/app_bar_main" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                app:cardBackgroundColor="#f4f4f4">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12dp"
+                        android:orientation="horizontal">
+
+                        <com.optimalbd.dibosh.TextView.CustomTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_weight="1"
+                            android:text="Name"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            app:customFont="@string/font_name" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.25"
+                            android:gravity="center"
+                            android:text=":"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp" />
+
+                        <com.optimalbd.dibosh.TextView.CustomTextView
+                            android:id="@+id/nameTextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Name"
+                            android:textColor="#00a651"
+                            android:textSize="20sp"
+                            app:customFont="@string/font_name" />
+
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginStart="10dp"
+                        android:src="@drawable/divider" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12dp"
+                        android:orientation="horizontal">
+
+                        <com.optimalbd.dibosh.TextView.CustomTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_weight="1"
+                            android:text="Birth Day"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            app:customFont="@string/font_name" />
+
+                        <com.optimalbd.dibosh.TextView.CustomTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.25"
+                            android:gravity="center"
+                            android:text=":"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            app:customFont="@string/font_name" />
+
+                        <com.optimalbd.dibosh.TextView.CustomTextView
+                            android:id="@+id/birthDayTextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Birth Day"
+                            android:textColor="#00a651"
+                            android:textSize="20sp"
+                            app:customFont="@string/font_name" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginStart="10dp"
+                        android:src="@drawable/divider" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:orientation="horizontal">
+
+                        <com.optimalbd.dibosh.TextView.CustomTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_weight="1"
+                            android:text="Marital Status"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            app:customFont="@string/font_name" />
+
+                        <com.optimalbd.dibosh.TextView.CustomTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.25"
+                            android:gravity="center"
+                            android:text=":"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            app:customFont="@string/font_name" />
+
+                        <com.optimalbd.dibosh.TextView.CustomTextView
+                            android:id="@+id/mStatusTextVIew"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Married"
+                            android:textColor="#00a651"
+                            android:textSize="20sp"
+                            app:customFont="@string/font_name" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginStart="10dp"
+                        android:src="@drawable/divider" />
+
+
+                    <LinearLayout
+                        android:id="@+id/mDateLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_weight="1"
+                            android:text="Marriage Date"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp" />
+
+                        <com.optimalbd.dibosh.TextView.CustomTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.25"
+                            android:gravity="center"
+                            android:text=":"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            app:customFont="@string/font_name" />
+
+                        <com.optimalbd.dibosh.TextView.CustomTextView
+                            android:id="@+id/marrigeDateTextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Marriage Date"
+                            android:textColor="#00a651"
+                            android:textSize="20sp"
+                            app:customFont="@string/font_name" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <com.optimalbd.dibosh.TextView.CustomButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/button_bacground"
+                android:onClick="updateInfo"
+                android:text="@string/update_info"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                app:customButtonFont="@string/font_name" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

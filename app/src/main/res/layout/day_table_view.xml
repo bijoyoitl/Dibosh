@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        android:layout_marginLeft="6dp"
+        android:gravity="center"
+        android:layout_marginRight="6dp"
+        android:layout_marginStart="6dp"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/idTV"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="No"
+            android:visibility="gone" />
+
+        <com.optimalbd.dibosh.TextView.CustomTextView
+            app:customFont="@string/font_name"
+            android:id="@+id/dateTV"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.75"
+            android:background="@drawable/cell_shape"
+            android:paddingLeft="5dp"
+            android:paddingStart="5dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Day"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+
+        <com.optimalbd.dibosh.TextView.CustomTextView
+            app:customFont="@string/font_name"
+            android:id="@+id/nameTV"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:background="@drawable/cell_shape"
+            android:paddingLeft="5dp"
+            android:paddingStart="5dp"
+            android:layout_gravity="center"
+            android:text="Name"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+</LinearLayout>

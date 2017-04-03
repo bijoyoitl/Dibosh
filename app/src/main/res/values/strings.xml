@@ -1,0 +1,142 @@
+<resources>
+    <string name="app_name">Dibosh</string>
+    <string name="app_n">দিবস</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string-array name="drawer_item">
+
+        <item>Today</item>
+        <item>UpComing</item>
+        <item>News</item>
+        <item>International</item>
+        <item>National</item>
+        <item>Holiday</item>
+        <item>Personal</item>
+    </string-array>
+
+    <string name="language_setting">Change Language</string>
+    <string name="font_name">Georgia.ttf</string>
+    <string name="lang_dialog_title">Change Language</string>
+    <string name="lang_dialog_message">Are you sure change language ?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="type">Select Event Type</string>
+    <string name="relationship">Select Relationship</string>
+
+    <string-array name="lang_select">
+        <item>English</item>
+        <item>বাংলা</item>
+    </string-array>
+
+    <string-array name="view_list">
+        <item>Day</item>
+        <item>Month</item>
+    </string-array>
+
+    <string-array name="month_list">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <string-array name="event_type">
+        <item>Select Event Type</item>
+        <item>BirthDay</item>
+        <item>Marriage Anniversary</item>
+        <item>Death anniversary</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="relationship_type">
+
+        <item>Select Relationship</item>
+        <item>Own</item>
+        <item>Father</item>
+        <item>Mother</item>
+        <item>parent</item>
+        <item>Brother</item>
+        <item>Sister</item>
+        <item>Son</item>
+        <item>Daughter</item>
+        <item>Wife</item>
+        <item>Husband</item>
+        <item>Friend</item>
+        <item>Nephew</item>
+        <item>Niece</item>
+        <item>Uncle</item>
+        <item>Aunt</item>
+        <item>Cousin</item>
+        <item>Others</item>
+
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="personal_info">Add Personal Information</string>
+    <string name="personal_update_info">Update Personal Information</string>
+    <string name="submit">Submit</string>
+    <string name="save_info">Information Save Successful</string>
+    <string name="update_info_msg">Information Update Successful</string>
+    <string name="failed_info">Information Save Failed</string>
+    <string name="update_failed_info">Information Update Failed</string>
+    <string name="enter_your_name">Enter Name</string>
+    <string name="enter_birth_date">Enter Birth Date</string>
+    <string name="mStatus">are you married ?</string>
+    <string name="m_date">Enter Marriage Date</string>
+    <string name="enter_date">Enter Date</string>
+    <string name="cancel">Cancel</string>
+    <string name="search">Search</string>
+    <string name="details">Bangladesh is a small country of south Asia. It was free from Pakistan in 1971. For the liberation many people (about 30 lacks) sacrificed their lives. </string>
+    <string name="profile">Profile</string>
+    <string name="update_info">Update Info</string>
+    <string name="married">Married</string>
+    <string name="unmarried">UnMarried</string>
+    <string name="add_event">Add Event</string>
+    <string name="edit_event">Edit Event</string>
+    <string name="edit_personal_info">Edit Personal Info</string>
+    <string name="add_personal_info">Add Personal Info</string>
+    <string name="set_notification_time">Set Notification Time</string>
+    <string name="note">Note</string>
+    <string name="note_details">Officially announced National Days by the government of Bangladesh are: February 21 = Martyrs Day, Independence Day = March 26, National Mourning Day = August 15, November 21 = armed forces day, 14 December = Martyred Intellectuals Day, 16 December = Victory Day, and the all other national Days of Bangladesh are considered to be the unofficial national Days.</string>
+
+    <string name="no_found_today_days">There are no remarkable event to celebrate Today</string>
+    <string name="no_found_national_days">There are no national day to celebrate Today</string>
+    <string name="no_found_international_days">There are no International day to celebrate Today</string>
+    <string name="no_found_personal_upcoming">There are no personal upcoming event</string>
+    <string name="no_found_national_upcoming">There are no national upcoming days</string>
+    <string name="no_found_international_upcoming">There are no international upcoming days</string>
+    <string name="personal">Personal Event</string>
+    <string name="national">National Day</string>
+    <string name="international">International Day</string>
+    <string name="view_by">View by :</string>
+    <string name="today">Today</string>
+    <string name="occasion">Occasion :</string>
+    <string name="detail">Details :</string>
+    <string name="read">Read in Bangla</string>
+    <string name="text_size">Text Size :</string>
+    <string name="rate_app">Rate it</string>
+
+    <string name="holiday_list">Holiday List</string>
+    <string name="about_us">About Us</string>
+
+    <string name="minhaj_fb_link"><a href="https://www.facebook.com/minhaj.limu">Minhaj Hasan</a></string>
+    <string name="bijoy_fb_link"><a href="https://www.facebook.com/bijoycse2016">Bijoy Debnath</a></string>
+    <string name="humayan_fb_link"><a href="https://www.facebook.com/humayunkabireyacin">Humayun Kabir</a></string>
+    <string name="anwar_fb_link"><a href="https://www.facebook.com/anwar.parvez.7547">Anwar Parvez</a></string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="siyamrupali_font">Siyamrupali_1_01.ttf</string>
+    <string name="solaimanLipi_font">SolaimanLipi.ttf</string>
+    <string name="news_details">News Details</string>
+
+</resources>

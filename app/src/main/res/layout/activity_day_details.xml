@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_day_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.optimalbd.dibosh.DayDetailsActivity">
+
+    <include layout="@layout/app_bar_main" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1.85">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:paddingBottom="20dp"
+                android:orientation="vertical">
+
+                <com.optimalbd.dibosh.TextView.CustomTextView
+                    android:id="@+id/nameTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="name"
+                    android:textColor="#0039FF"
+                    android:textSize="25sp"
+                    app:customFont="@string/font_name" />
+
+                <TextView
+                    android:id="@+id/notificationTimeTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="Notification Time"
+                    android:textColor="@android:color/black"
+                    android:textSize="23sp"
+                    android:visibility="gone" />
+
+                <com.optimalbd.dibosh.TextView.CustomTextView
+                    android:id="@+id/oTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/occasion"
+                    android:textColor="#ef0000"
+                    android:textSize="16sp"
+                    app:customFont="@string/font_name" />
+
+                <com.optimalbd.dibosh.TextView.CustomTextView
+                    android:id="@+id/occasionTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/occasion"
+                    android:textColor="#000000"
+                    android:layout_marginTop="4dp"
+                    android:textSize="22sp"
+                    app:customFont="@string/font_name" />
+
+                <com.optimalbd.dibosh.TextView.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dTV"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/detail"
+                    android:textColor="#ef0000"
+                    android:textSize="16sp"
+                    app:customFont="@string/font_name" />
+
+                <com.optimalbd.dibosh.TextView.CustomTextView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/detailsTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/details"
+                    android:textColor="@android:color/black"
+                    android:textSize="19sp"
+                    app:customFont="@string/font_name" />
+
+                <com.optimalbd.dibosh.TextView.CustomTextView
+                    android:id="@+id/readTextView"
+                    android:layout_width="match_parent"
+                    android:gravity="right"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/read"
+                    android:textColor="#7800ef"
+                    android:textSize="16sp"
+                    app:customFont="@string/font_name" />
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.20"
+            android:gravity="center"
+            android:background="#00A651"
+            android:orientation="horizontal">
+
+            <com.optimalbd.dibosh.TextView.CustomTextView
+                android:id="@+id/textSizeTextView"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:text="@string/text_size"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:textSize="16sp"
+                app:customFont="@string/font_name" />
+
+            <SeekBar
+                android:id="@+id/sizeSeekBar"
+                android:layout_width="match_parent"
+                android:max="50"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content"
+                android:progressDrawable="@drawable/progress_seekbar"
+                android:thumb="@drawable/thum"
+                />
+
+        </LinearLayout>
+
+
+
+</LinearLayout>

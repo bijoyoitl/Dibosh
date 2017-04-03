@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="3dp"
+        custom:cardBackgroundColor="#ffffff"
+        >
+        <!--custom:cardCornerRadius="10dp"-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.optimalbd.dibosh.TextView.CustomTextView
+                android:id="@+id/idTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="id"
+                android:textColor="@android:color/black"
+                android:textSize="23sp"
+                android:visibility="gone"
+                custom:customFont="SolaimanLipi.ttf" />
+
+            <com.optimalbd.dibosh.TextView.CustomTextView
+                android:id="@+id/dateTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="4dp"
+                android:paddingEnd="4dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="4dp"
+                android:paddingStart="20dp"
+                android:paddingTop="4dp"
+                android:text="Date"
+                android:textColor="#0039FF"
+                android:textSize="23sp"
+                custom:customFont="@string/font_name"/>
+
+            <com.optimalbd.dibosh.TextView.CustomTextView
+                android:id="@+id/dayTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="6dp"
+                android:paddingEnd="4dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="4dp"
+                android:paddingStart="20dp"
+                android:paddingTop="4dp"
+                android:text="Day"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                custom:customFont="@string/font_name" />
+
+            <com.optimalbd.dibosh.TextView.CustomTextView
+                android:id="@+id/nameTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="6dp"
+                android:paddingEnd="4dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="4dp"
+                android:paddingStart="20dp"
+                android:paddingTop="4dp"
+                android:text="Name"
+                android:textColor="@android:color/black"
+                android:textSize="21sp"
+                custom:customFont="@string/font_name" />
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

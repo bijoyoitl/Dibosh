@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_birth_day"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context="com.optimalbd.dibosh.BirthDayActivity">
+    <!--android:background="@color/colorFabBack"-->
+    <include layout="@layout/app_bar_main"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:onClick="close"
+        android:text="Close"
+        android:textAllCaps="false"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:onClick="close"
+        android:layout_margin="12dp"
+        android:src="@drawable/close_icon" />
+
+    <com.optimalbd.dibosh.TextView.CustomTextView
+        android:id="@+id/ageTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="BirthDay"
+        android:textColor="@android:color/black"
+        android:textSize="23sp"
+        app:customFont="@string/font_name" />
+
+    <ImageView
+        android:id="@+id/birthDayImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/birthday" />
+
+</LinearLayout>

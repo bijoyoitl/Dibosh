@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.optimalbd.dibosh.MainActivity">
+
+    <include layout="@layout/app_bar_main" />
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/contentF"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f4f4f4"
+                android:clickable="false"/>
+        </LinearLayout>
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ListView
+                    android:id="@+id/drawerListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:background="#343434"
+                    android:divider="#00a651"
+                    android:dividerHeight="1dp"
+                    android:listSelector="#1900a6" />
+                <!--android:listSelector="#00a651"-->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="#555555">
+
+                    <com.optimalbd.dibosh.TextView.CustomTextView
+                        android:id="@+id/switchTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        app:customFont="@string/font_name" />
+
+                    <Switch
+                        android:id="@+id/switchButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/switchTV"
+                        android:layout_centerHorizontal="true"
+                        android:onClick="onSwitchClicked"
+                        android:thumbTint="@android:color/white"
+                        android:trackTint="#00a651"
+                        tools:ignore="UnusedAttribute" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </android.support.design.widget.NavigationView>
+
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>

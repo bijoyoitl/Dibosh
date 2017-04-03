@@ -1,0 +1,141 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:scrollbars="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#363636">
+
+            <com.optimalbd.dibosh.TextView.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:padding="2dp"
+                android:layout_marginStart="20dp"
+                android:gravity="center_vertical"
+                android:text="Personal"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                app:customFont="@string/font_name" />
+
+        </LinearLayout>
+
+
+        <ListView
+            android:layout_marginBottom="4dp"
+            android:id="@+id/personalListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:divider="@null"
+            >
+        </ListView>
+
+        <com.optimalbd.dibosh.TextView.CustomTextView
+            app:customFont="@string/font_name"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/personalTV"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="No Personal UpComing Special Days"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#363636">
+
+            <com.optimalbd.dibosh.TextView.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:padding="2dp"
+                android:layout_marginStart="20dp"
+                android:gravity="center_vertical"
+                android:text="National"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                app:customFont="@string/font_name" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/nationalListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:divider="@null"
+            >
+        </ListView>
+
+        <com.optimalbd.dibosh.TextView.CustomTextView
+            app:customFont="@string/font_name"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/nationalTV"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="No National UpComing Special Days"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#363636">
+
+            <com.optimalbd.dibosh.TextView.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:padding="2dp"
+                android:layout_marginStart="20dp"
+                android:gravity="center_vertical"
+                android:text="International"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                app:customFont="@string/font_name" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/internationalListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:divider="@null"
+            >
+        </ListView>
+
+        <com.optimalbd.dibosh.TextView.CustomTextView
+            app:customFont="@string/font_name"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/internationalTV"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="No International UpComning Special Days"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</ScrollView>

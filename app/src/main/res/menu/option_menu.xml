@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_change_language"
+        android:orderInCategory="60"
+        android:title="@string/language_setting"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_profile"
+        android:orderInCategory="40"
+        android:title="@string/profile"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_rate"
+        android:orderInCategory="80"
+        android:title="@string/rate_app"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/about_us"
+        android:orderInCategory="90"
+        android:title="@string/about_us"
+        app:showAsAction="never" />
+
+</menu>

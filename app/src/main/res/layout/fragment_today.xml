@@ -1,0 +1,144 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadingEdgeLength="0dp"
+    android:fillViewport="true"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#363636">
+
+            <com.optimalbd.dibosh.TextView.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:padding="2dp"
+                android:layout_marginStart="20dp"
+                android:gravity="center_vertical"
+                android:text="@string/personal"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                app:customFont="@string/font_name" />
+        </LinearLayout>
+
+
+        <com.optimalbd.dibosh.NonScrollListView
+            android:layout_marginBottom="4dp"
+            android:id="@+id/personalListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:divider="@null"
+            >
+        </com.optimalbd.dibosh.NonScrollListView>
+
+        <com.optimalbd.dibosh.TextView.CustomTextView
+            app:customFont="@string/font_name"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/personalTV"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="@string/no_found_today_days"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#363636">
+
+            <com.optimalbd.dibosh.TextView.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:padding="2dp"
+                android:layout_marginStart="20dp"
+                android:gravity="center_vertical"
+                android:text="@string/national"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                app:customFont="@string/font_name" />
+
+        </LinearLayout>
+
+        <com.optimalbd.dibosh.NonScrollListView
+            android:id="@+id/nationalListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:divider="@null"
+            >
+        </com.optimalbd.dibosh.NonScrollListView>
+
+        <com.optimalbd.dibosh.TextView.CustomTextView
+            app:customFont="@string/font_name"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/naTV"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="@string/no_found_national_days"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#363636">
+
+            <com.optimalbd.dibosh.TextView.CustomTextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:padding="2dp"
+                android:layout_marginStart="20dp"
+                android:gravity="center_vertical"
+                android:text="@string/international"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                app:customFont="@string/font_name" />
+        </LinearLayout>
+
+        <com.optimalbd.dibosh.NonScrollListView
+            android:id="@+id/internationalListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:divider="@null"
+            >
+        </com.optimalbd.dibosh.NonScrollListView>
+
+        <com.optimalbd.dibosh.TextView.CustomTextView
+            app:customFont="@string/font_name"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/intTV"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="@string/no_found_international_days"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</ScrollView>
